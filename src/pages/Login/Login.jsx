@@ -33,7 +33,7 @@ export default class Login extends Component{
                         { pattern:/^[0-9]*$/, message:'只能输入数字' }
                     ]}
                 >
-                    <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="用户名" />
+                    <Input  prefix={<UserOutlined className="site-form-item-icon" />} placeholder="用户名" />
                 </Form.Item>
                 <Form.Item
                     name="password"
@@ -44,7 +44,7 @@ export default class Login extends Component{
                         },
                         ({ getFieldValue }) => ({
                             validator(rule, value) {
-                              const reg = /^[a-zA-Z]{1}([a-zA-Z0-9]|[._]){4,19}$/  
+                            //   const reg = /^[a-zA-Z]{1}([a-zA-Z0-9]|[._]){4,19}$/  
                               if (value.length <6) {
                                 return Promise.reject("不能小于6位");
                               }else if( value.length > 20 ){
