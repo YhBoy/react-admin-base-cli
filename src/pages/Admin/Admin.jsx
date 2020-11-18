@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './admin.less'
+
 import HeaderTop from './HeaderTop/HeaderTop'
 import Footer from './Footer/Footer'
 
@@ -17,16 +17,12 @@ import Pie from '../Pie/Pie'
 import Line from '../Line/Line'
 
 import Nav from './Nav/Nav'
+import './admin.less'
 
 import { Switch,Route, Redirect } from 'react-router-dom' 
 import { Layout } from 'antd';
 const { Header,  Sider, Content } = Layout;
 export default class Login extends Component{
-
-    componentDidMount(){
-        console.log(123)
-    }
-
 
     render(){
         return ( 

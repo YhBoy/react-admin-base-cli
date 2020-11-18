@@ -10,6 +10,11 @@ antd 3.x 表单校验的时候  export default Form.create()(Login)
 	例子: Form.create()(组件)  withRouter(组件)  connect()(组件)
 
 
+react 结合 redux
+	下载的依赖
+		redux,react-redux,react-thunk,redux-devtools-extension
+
+	
 
 
 

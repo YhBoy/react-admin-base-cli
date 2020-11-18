@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
+import './Login.less'
 
 import { Form, Input, Button } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import './Login.less'
+
 
 export default class Login extends Component{
     onFinish = values => {

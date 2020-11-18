@@ -1,12 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import { Menu, Button } from 'antd';
+import { Menu } from 'antd';
 import {
-  AppstoreOutlined,
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
   PieChartOutlined,
-  DesktopOutlined,
-  ContainerOutlined,
   MailOutlined,
 } from '@ant-design/icons';
 
@@ -16,15 +11,6 @@ import menuList from '../../../config/menu'
 const { SubMenu } = Menu;
 
 export default class Nav extends Component{
-      state = {
-        collapsed: false,
-      };
-    
-      toggleCollapsed = () => {
-        this.setState({
-          collapsed: !this.state.collapsed,
-        });
-      };
       createMenu = (target)=>{
          return target.map((item)=>{
             if( !item.children  ){
@@ -49,12 +35,9 @@ export default class Nav extends Component{
             <Fragment>
                 <h1 className="logo">这里可以放LOGO</h1>
                 <Menu
-                        
-                        defaultSelectedKeys={['1']}
-                        defaultOpenKeys={['sub1']}
+                        defaultSelectedKeys={['/admin/home']}
                         mode="inline"
                         theme="dark"
-                        inlineCollapsed={this.state.collapsed}
                     >
                     {
                         this.createMenu(menuList)
